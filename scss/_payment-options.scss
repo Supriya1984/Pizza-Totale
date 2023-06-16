@@ -1,0 +1,76 @@
+/* variables */
+$font-stack : Lato, Helvetica, sans-serif;
+$bg-color: #f69c3d;
+/*bem methodology*/
+.showcase {
+
+    margin: 0 auto;
+    height: auto;
+
+
+&__bg-img {
+    background: url(../img/inner-bg.png) no-repeat;
+    height: 213px;
+    width: 90%;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    display: block;
+
+}
+&__show_2{
+    font-family: $font-stack;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 5%;
+}
+}
+/* nesting */
+.options {
+    width:45%;
+    margin: 4% 0 5% 36%;
+
+ &__options1 {
+     background: $bg-color;
+     color: #fff;
+     font-weight: 400;
+     font-size: 25px;
+     width: 62%;
+     padding: 10px 0;
+     text-align: center;
+     margin-top:2%;
+
+     a,
+     a:hover {
+         text-decoration: none;
+         color: #fff;
+     }
+ }
+}
+@media (max-width:768px) {
+.showcase__show_2 {
+
+        font-size: 26px;
+
+    }
+.options {
+        width:80%;
+        margin:0px;
+        padding-left:17%;
+  
+    
+
+    &__options1 {
+        width:80%;
+        font-size: 20px;
+        padding: 10px 0;
+        text-align: center;
+        margin-top:5%;
+    }
+}
+.showcase__bg-img{
+    height:110px;
+    margin-left: 2%;
+    padding: 0;
+    width: 94%;
+}
+}

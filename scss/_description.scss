@@ -1,0 +1,138 @@
+/* variables */
+$font-stack : Lato, Helvetica, sans-serif;
+$bg-color: #f69c3d;
+
+/*bem methodology*/
+
+.showcase_big {
+
+    margin: 0 auto;
+    height: auto;
+
+
+&__bg-img {
+    background: url(../img/inner-bg.png) no-repeat;
+    height: 213px;
+    width: 90%;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    display: block;
+
+}
+}
+/* nesting */
+.box_1{
+
+    width:85%;
+    margin:4% 0 0 10%;
+
+&__container_1{
+    margin-left:2%;
+    width: 100%;
+    display: flex;
+ p{
+    font-size:16px;
+    color:#777;
+    padding:8px 0;
+}
+&--small{
+    margin:0 20px 0 20px;
+}
+h1{
+    font-size:30px;
+    color:#000;
+    font-family: $font-stack;
+   
+   
+}
+&--box_2{
+    background:$bg-color;
+    color:#fff;
+    font-weight: 400;
+    padding:2% 0;
+    margin-top:2%;
+    width:80%;
+    text-align: center;
+    a, a:hover{
+        text-decoration: none;
+        color:#fff;
+    }
+  }
+&--color{
+    color:#da001f;
+    font-weight:800;
+    font-size: 20px;
+    margin:0;
+    padding:7px 0 7px 0;
+}
+}
+}
+@media (max-width:768px) {
+
+            .showcase_big__bg-img {
+                    height: 110px;
+                    margin-left: 2%;
+                    padding: 0;
+                     width: 94%;
+ 
+            
+                }
+        
+.box_1 {
+
+        width: 85%;
+        margin: 0% 0 0 4%;
+        
+    
+
+    &__container_1 {
+        margin-left: 2%;
+        width: 100%;
+        display: block;
+        padding-top:20px;
+       
+
+        p {
+            font-size: 16px;
+            color: #777;
+            padding: 8px 0;
+            
+        }
+
+        &--small {
+            margin: 20px 10px 0 10px;
+        }
+
+        h1 {
+            font-size: 18px;
+            color: #000;
+            font-family: $font-stack;
+
+
+        }
+
+        &--box_2 {
+             font-size: 15px;
+
+            width: 95%;
+
+
+        }
+
+        &--color {
+            font-size: 18px;
+            margin:0;
+            padding-left:0;
+        }
+    
+
+ &--img_fluid {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin:auto;
+          }
+}
+}
+
+}

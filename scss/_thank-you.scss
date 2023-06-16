@@ -1,0 +1,52 @@
+/* variables */
+$font-stack : Lato,
+Helvetica,
+sans-serif;
+/* nesting */
+/*bem methodology*/
+.showcase {
+    margin: 0 auto;
+    height: auto;
+&__bg-img {
+    background: url(../img/inner-bg.png) no-repeat;
+    height: 213px;
+    width: 90%;
+    background-size: 100% 100%;
+    display: block;
+    margin: 0 7%;
+}
+&__thank-you{
+    font-family: $font-stack;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 5%;
+}
+&__new{
+    font-family:monospace;
+    font-style: italic;
+    color:#af3300;
+    font-size:60px;
+    font-weight: 600;
+    text-align:center;
+    margin:3% 0;
+}
+}
+@media (max-width:768px) {
+.showcase {
+            width: 100%;        
+&__thank-you {
+     
+        font-size: 30px;
+            }
+&__new {
+        font-size: 30px;
+        margin-top:4%;
+    }
+&__bg-img{
+    height:110px;
+    margin-left:2%;
+    padding:0;
+    width: 94%;
+}
+}
+}

@@ -1,0 +1,105 @@
+
+/*bem methodology*/
+.showcase {
+
+    margin: 0 auto;
+    height: auto;
+
+
+&__bg-img{
+    background: url(../img/inner-bg.png) no-repeat;
+    height: 213px;
+    width: 90%;
+    background-size:100% 100%;
+    display: block;
+    
+}
+&__show_h1{
+    font-size:36px;
+    text-align: center;
+    padding-top:5%;
+}
+}
+.maori-dine{
+    font-size:24px;
+}
+/* nesting */
+.option{
+
+        display: flex;
+        justify-content: space-between;
+        margin:5% 20%;
+        color:white;
+        font-weight: 600;
+        text-align: center;
+        
+    &__lft{
+    background:#ffbf29;
+    padding:30px 30px;
+    width:30%;
+    font-size: 20px;
+   a{
+    text-decoration: none;
+    color:#fff;
+   } 
+   a:hover{
+    color:white;
+   }
+}
+
+
+&__rht {
+    background:#2894b6;
+    padding:30px 30px;
+    width:30%;
+    font-size:20px;
+    a {
+            text-decoration: none;
+            color: #fff;
+        }
+    
+        a:hover {
+            color: white;
+        }
+}
+
+}
+
+@media (max-width:768px) {
+    
+.showcase__show_h1 {
+        font-size: 19px;
+    }
+
+.option{
+
+    width:87%;
+    margin-left: 8%;
+        &__lft {
+            background: #ffbf29;
+            padding:18px;
+            width: 32%;
+            font-size: 14px;
+           
+            
+            }
+         &__rht {
+            background: #2894b6;
+            padding:18px;
+            margin-right:2%;
+            width:32%;
+            font-size: 14px;
+            } 
+        }
+.showcase__bg-img{
+    height:110px;
+    margin-left:2%;
+    padding: 0;
+    width: 94%;
+        }
+
+   .maori-dine {
+       font-size: 16px;
+   }
+
+}
